@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- FEJLÉC A VISSZA GOMBBAL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Ez a Vissza gombunk -->
+            <TextView
+                android:id="@+id/tvBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⬅ Vissza"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#673AB7"
+                android:paddingRight="16dp" />
+
+            <!-- Az eredeti főcím -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Új bejelentés"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etPetName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Állat neve"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp" />
+
+        <EditText
+            android:id="@+id/etPetGender"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Neme (Hím/Nőstény)"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp" />
+
+        <EditText
+            android:id="@+id/etPetLocation"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Helyszín (Város)"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp" />
+
+        <!-- Telefonszám -->
+        <EditText
+            android:id="@+id/etPetPhone"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Telefonszám (pl. +36301234567)"
+            android:inputType="phone"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp" />
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Kép kiválasztása"
+            android:backgroundTint="#9E9E9E"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:id="@+id/ivPetPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="12dp"
+            android:background="#EEEEEE"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnSavePet"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Mentés és feltöltés"
+            android:backgroundTint="#673AB7"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
