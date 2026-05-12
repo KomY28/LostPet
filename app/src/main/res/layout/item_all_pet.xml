@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="@android:color/white">
+
+        <!-- Kép szekció -->
+        <ImageView
+            android:id="@+id/ivAllPetImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:background="#EEEEEE"
+            android:contentDescription="Állat fotója" />
+
+        <!-- Szöveges szekció és Gombok -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="top">
+
+            <TextView
+                android:id="@+id/tvAllPetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Név"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#222222" />
+
+            <TextView
+                android:id="@+id/tvAllPetGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neme: -"
+                android:layout_marginTop="6dp"
+                android:textSize="16sp"
+                android:textColor="#555555" />
+
+            <TextView
+                android:id="@+id/tvAllPetLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Helyszín: -"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:textColor="#555555" />
+
+            <!-- A két gomb egymás mellett -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btnAllMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Térkép"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btnAllCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Hívás"
+                    android:backgroundTint="#2196F3"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

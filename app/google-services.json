@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "99064575791",
+    "project_id": "lostpetapp-6806d",
+    "storage_bucket": "lostpetapp-6806d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99064575791:android:c57bb881ef8690bdea93da",
+        "android_client_info": {
+          "package_name": "com.example.lostpet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDQHj_OctnztSY9ApgSl2hKR4vTBd8oZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
